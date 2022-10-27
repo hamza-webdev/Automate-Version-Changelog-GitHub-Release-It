@@ -63,4 +63,12 @@ git push -u origin main
 ````
 npm install husky --include=dev
 
+./node_modules/husky/lib/bin.js install
+
+touch .husky/commit-msg && chmod a+x .husky/commit-msg
+
+ git commit -a
+
+ npm run release
+
 ````

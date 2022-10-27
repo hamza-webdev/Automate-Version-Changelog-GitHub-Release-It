@@ -1,6 +1,6 @@
 {
   "name": "automate-version-changelog-github-release-it",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Version and Changelog your projects automatically to GitHub using Release It",
   "main": "index.js",
   "scripts": {

@@ -1,5 +1,7 @@
 
 
+## [1.0.2](https://github.com/hamza-webdev/Automate-Version-Changelog-GitHub-Release-It/compare/1.0.1...1.0.2) (2022-10-27)
+
 ## 1.0.1 (2022-10-27)
 
 

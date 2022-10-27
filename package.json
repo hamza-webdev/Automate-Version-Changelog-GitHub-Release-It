@@ -1,0 +1,17 @@
+{
+  "name": "automate-version-changelog-github-release-it",
+  "version": "1.0.0",
+  "description": "Version and Changelog your projects automatically to GitHub using Release It",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hamza",
+  "license": "ISC",
+  "dependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "@release-it/conventional-changelog": "^5.1.1",
+    "release-it": "^15.5.0"
+  }
+}

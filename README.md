@@ -23,3 +23,44 @@ git remote add origin https://github.com/hamza-webdev/Automate-Version-Changelog
 git branch -M main
 git push -u origin main
 ````
+
+## Add in package json file
+````
+"release-it":{
+    "git": {
+        ""commitMessage": "chore: release v${version}"
+    },
+    "github": {
+        "release": true
+    },
+    "npm":{
+        "publish": false
+    },
+    "plugins":{
+        "@release-it/conventional-changelog": {
+            "infile": "CHANGELOG.md",
+            "preset": {
+                "name": "conventionalcommits",
+                "types": [
+                    {
+                        "type": "feat",
+                        "section": "Features"
+                    },
+                    {
+                        "type": "fix",
+                        "section": "Bug Fixes"
+
+                    }
+                ]
+            }
+        }
+    }
+}
+
+````
+### Install husky on dev
+
+````
+npm install husky --include=dev
+
+````

@@ -72,3 +72,16 @@ touch .husky/commit-msg && chmod a+x .husky/commit-msg
  npm run release
 
 ````
+
+$ npm i @commitlint/cli @commitlint/config-conventional
+
+# from original comment
+$ echo "module.exports = {extends: ['@commitlint/config-conventional']}" > commitlint.config.js
+
+# sample commit message from original comment
+$ echo 'refactor: remove old files, add dev files' | npx commitlint -V
+⧗   input: refactor: remove old files, add dev files
+✔   found 0 problems, 0 warnings
+
+$ npx commitlint --version
+@commitlint/cli@16.0.2
